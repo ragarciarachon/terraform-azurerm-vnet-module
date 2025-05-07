@@ -1,18 +1,3 @@
-terraform {
-    required_providers {
-        azurerm = {
-            source = "hashicorp/azurerm"
-            version = "4.27.0"
-        }
-    }
-    required_version = ">= 1.1.0"
-}
-
-# Configuración del proveedor de Azure
-provider "azurerm" {
-    features {} # Activa las funciones del proveedor
-}
-
 # Bloque que permite definir valores temporales
 locals {
     default_tags = {
